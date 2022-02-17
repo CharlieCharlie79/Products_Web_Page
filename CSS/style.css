@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&family=Lora&family=Monoton&display=swap');
+*
+{
+    padding: 0;
+    margin:0;
+}
+
+body
+{
+   background: #ffe8d6;
+}
+
+
+.title
+{
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Monoton', cursive;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ff6d00;
+}
+
+#search
+{
+    position: relative;
+    float: right;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    padding:9.5px 4px;
+}
+
+#search::placeholder
+{
+    font-size: 1.2rem;
+    text-align:left;
+    transform:translateX(1%);
+}
+
+.nav-links
+{
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.nav-links ul li
+{
+    display: inline-block;
+    position:relative;
+    margin:10px 45px;
+    cursor:pointer;
+    font-family: 'Lora', serif;
+}
+
+.nav-links ul li::after
+{
+    content: "";
+    width: 0%;
+    height:2px;
+    background: #ff6d00;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after
+{
+    width:100%;
+}
+
+@media (max-width:700px)
+{
+    #search
+    {
+        display:none;
+    }
+
+    .nav-links ul li
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-links ul li:hover
+    {
+        border: 2px solid #290f15;
+        color: #290f15;
+        background-color: #ffffff;
+        transition:0.5s;
+    }
+
+    .nav-links ul li:hover::after
+    {
+        width:0%;
+    }
+}
+
+
+.products
+{
+   
+    margin:50px;
+}
+
+
+
+.products_nav_list img
+{
+    height: 200px;
+    width: 225px;
+    border-radius: 10px;
+    transition:0.5s;
+}
+
+.products_nav_list img:hover
+{
+    box-shadow: 0 0 5px 5px red;
+}
+
+.products_nav_list ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+
+.line
+{
+    border: 0.5px solid black;
+}
+
+footer
+{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 0.3rem;
+    font-size: 2rem;
+}
+
+#phone_num
+{
+  padding-top: 3rem;
+}
+
+footer ul 
+{
+    display:flex;  
+}
+
+footer ul li
+{
+    list-style: none;
+    padding: 3rem 5rem;
+}
+
+footer ul li i
+{
+    color: black;
+}
+
+@media (max-width: 700px)
+{
+    footer
+    {
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+   
+}
